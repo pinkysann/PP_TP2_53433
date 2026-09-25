@@ -1,0 +1,58 @@
+==============================================
+  TP2 - Paradigmas de Programacion - UTN FRM
+==============================================
+
+----- EJERCICIO 1: inscripciones y excepciones -----
+Caso exitoso: Ana Gomez se inscribio en 'Introduccion a Java'.
+Caso exitoso: cupo del taller (2) completado con Bruno y Carla.
+Caso fallido controlado -> CupoExcedidoException: No hay cupo en 'Taller de Testing' (máximo 2 inscriptos).
+(finally) fin del intento de inscripcion en el taller.
+
+=== Evento: Semana de la Tecnologia (id=EVT-1) ===
+Costo base: $1000.0 | Gratuito: false
+Costo estimado total: $3300.0
+Sala: Auditorio Principal
+Actividades (3):
+[Charla] #1 - Introduccion a Java
+[Taller] #2 - Taller de Testing
+[Curso] #3 - Curso de Bases de Datos
+
+----- Persistencia del evento -----
+Evento persistido correctamente en disco (carpeta 'eventos/').
+Evento recuperado desde archivo:
+=== Evento: Semana de la Tecnologia (id=EVT-1) ===
+Costo base: $1000.0 | Gratuito: false
+Costo estimado total: $3300.0
+Sala: Auditorio Principal
+Actividades (3):
+[Charla] #1 - Introduccion a Java
+[Taller] #2 - Taller de Testing
+[Curso] #3 - Curso de Bases de Datos
+No existe un evento persistido con id 'ID-QUE-NO-EXISTE'.
+(finally) fin del flujo de persistencia.
+
+----- EJERCICIO 2: certificados -----
+Certificado emitido por UTN - Facultad Regional Mendoza a Bruno Diaz por participar en el taller 'Taller de Testing'.
+Certificado emitido por UTN - Facultad Regional Mendoza a Diego Suarez por aprobar el curso 'Curso de Bases de Datos' (nivel 1).
+'Introduccion a Java' (Charla) no es certificable.
+
+----- EJERCICIO 3: genericos y wildcards -----
+Cantidad de charlas: 1 (List<Charla>)
+Cantidad de talleres: 1 (List<Taller>)
+Cantidad de cursos: 1 (List<Curso>)
+Costo materiales charlas: $0.0
+Costo materiales talleres: $1500.0
+Costo materiales cursos: $800.0
+
+----- EJERCICIO 4: tickets e hilos -----
+[Hilo envío] Empieza el envío de tickets de 'Semana de la Tecnologia' (hilo: Thread-0)
+  -> Enviando TCK-50111-140162409543 a Ana Gomez
+[Hilo principal] (main) vuelta 1 - evento 'Semana de la Tecnologia', 3 actividades.
+[Hilo principal] (main) vuelta 2 - evento 'Semana de la Tecnologia', 3 actividades.
+  -> Enviando TCK-50222-140170731386 a Bruno Diaz
+[Hilo principal] (main) vuelta 3 - evento 'Semana de la Tecnologia', 3 actividades.
+  -> Enviando TCK-50444-140170743624 a Diego Suarez
+[Hilo envío] Terminó de enviar todos los tickets.
+
+Cantidad total de eventos creados en el sistema: 1
+Programa finalizado.
